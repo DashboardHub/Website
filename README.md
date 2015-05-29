@@ -6,6 +6,10 @@ Url: http://home.dashboardhub.io
 
 ---
 
+Currently using theme: https://github.com/IronSummitMedia/startbootstrap-creative 
+
+---
+
 ## Installation
 
 * Install [Jekyll](http://jekyllrb.com)
