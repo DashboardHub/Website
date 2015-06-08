@@ -5,3 +5,7 @@ header {
 hr {
     margin: 30px auto;
 }
+
+.bg-dark .panel li {
+    color: #000000;
+}
