@@ -2,7 +2,7 @@
 
 Information website about Dashboard Hub
 
-Url: http://home.dashboardhub.io
+Url: http://dashboardhub.io
 
 ---
 
