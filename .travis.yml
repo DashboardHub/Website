@@ -9,7 +9,7 @@ before_install:
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
 script:
-  - make build
+  - make build.version
 
 # branch whitelist, only for GitHub Pages
 branches:
@@ -25,6 +25,6 @@ sudo: false # route your build to the container-based infrastructure for a faste
 deploy:
   - provider: script
     skip_cleanup: true
-    script: make sync
+    script: make deploy.version
     on:
       branch: master
