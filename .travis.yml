@@ -2,6 +2,10 @@ language: ruby
 rvm:
 - 2.3.3
 
+before_install:
+  - sudo apt-get install python3
+  - sudo pip install awscli
+
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
 script:
