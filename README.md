@@ -4,7 +4,7 @@
 
 Information website about Dashboard Hub
 
-Url: http://dashboardhub.io
+Url: https://dashboardhub.io
 
 ---
 
