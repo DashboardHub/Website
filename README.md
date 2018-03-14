@@ -8,7 +8,7 @@ Url: https://dashboardhub.io
 
 ---
 
-Currently using theme: https://github.com/IronSummitMedia/startbootstrap-creative 
+Currently using theme: https://github.com/IronSummitMedia/startbootstrap-creative
 
 ---
 
@@ -17,6 +17,15 @@ Currently using theme: https://github.com/IronSummitMedia/startbootstrap-creativ
 * Install [Jekyll](http://jekyllrb.com)
 * Clone this repo
 * Start Jekyll server `jekyll serve`
+
+### Jeyll with Docker
+
+```
+export JEKYLL_VERSION=3.5
+docker run --rm --volume=$PWD:/srv/jekyll -p 35729:35729 -p 4000:4000 -it jekyll/builder:$JEKYLL_VERSION jekyll serve
+```
+
+More info https://github.com/envygeeks/jekyll-docker
 
 ## Deploy
 
