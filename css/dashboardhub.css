@@ -16,3 +16,7 @@ hr {
 .bg-dark .panel li {
     color: #000000;
 }
+
+header .header-content .header-content-inner {
+  max-width: 700px;
+}
