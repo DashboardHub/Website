@@ -275,7 +275,7 @@ header.masthead .intro-text .intro-heading {
   font-size:14px;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   width:100%;
-  }
+}
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
@@ -778,3 +778,14 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
 }
+
+.video-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.video-frame {
+  display: block;
+  margin: 0 auto;
+}
+
