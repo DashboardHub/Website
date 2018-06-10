@@ -3,6 +3,10 @@
     width: 200px;
 }
 
+nav#mainNav {
+  background-color: rgba(0,0,0,0.7)
+}
+
 /*Blockquote*/
 blockquote {
     width: 100%;
