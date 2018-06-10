@@ -22,6 +22,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
     <link href="css/override.css" rel="stylesheet">
 
   </head>
@@ -31,7 +32,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top gradient-bg" id="mainNav">
       <div class="container">
-        <a class="js-scroll-trigger" href="#page-top"><img class="header-logo" src="https://cdn.dashboardhub.io/logo-horizontal-std-2567x580.png"></a>
+        <a class="js-scroll-trigger navbar-brand" href="#page-top"><img class="img-fluid" src="https://cdn.dashboardhub.io/logo-horizontal-std.svg"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -48,12 +49,9 @@
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="https://medium.com/@dashboardhub" target="_blank">Blog</a>
             </li>
-            <li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="https://pipeline.dashboardhub.io/" target="_blank">App</a>
             </li>
           </ul>
@@ -65,8 +63,25 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-heading text-uppercase">Meet DashboardHub</div>
-          <div class="intro-lead-in text-uppercase">The finger on your pipeline pulse</div>
+          <div class="intro-content rounded border border-light">
+            <div class="intro-heading text-uppercase">DashboardHub</div>
+            <div class="intro-lead-in text-uppercase">The finger on your pipeline pulse</div>
+
+            <div id="mc_embed_signup">
+              <form action="https://dashboardhub.us17.list-manage.com/subscribe/post?u=0f390eebc68ad563bffc5926a&amp;id=1a1151bd19" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                  <div class="form-inline justify-content-center">
+                    <label for="mce-EMAIL" class="p-2">Subscribe to our mailing list</label>
+                    <input type="email" value="" name="EMAIL" class="email form-control p-2" id="mce-EMAIL" placeholder="email address" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0f390eebc68ad563bffc5926a_1a1151bd19" tabindex="-1" value=""></div>
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-light p-2 m-2">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
         </div>
       </div>
     </header>
@@ -79,8 +94,8 @@
             <h2 class="section-heading text-uppercase">What can we do for you?</h2>
           </div>
         </div>
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/z0RXBBtosD0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="video-frame"></iframe>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/z0RXBBtosD0" allowfullscreen></iframe>
         </div>
         <div class="row text-center">
           <div class="col-md-4">
@@ -151,123 +166,6 @@
       </div>
     </section>
 
-    <!-- Portfolio Grid
-    <section class="bg-light" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Portfolio</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Threads</h4>
-              <p class="text-muted">Illustration</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Finish</h4>
-              <p class="text-muted">Identity</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Southwest</h4>
-              <p class="text-muted">Website Design</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Window</h4>
-              <p class="text-muted">Photography</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
--->
-    <!-- About -->
-    <!--
-    <div class="col-md-4 col-sm-6 portfolio-item">
-      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-        <div class="portfolio-hover">
-          <div class="portfolio-hover-content">
-            <i class="fa fa-plus fa-3x"></i>
-          </div>
-        </div>
-        <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-      </a>
-      <div class="portfolio-caption">
-        <h4>Explore</h4>
-        <p class="text-muted">Graphic Design</p>
-      </div>
-    </div>
-
-    -->
-
     <section class="bg-light" id="howitworks">
       <div class="container">
         <div class="row">
@@ -319,7 +217,7 @@
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/howitworks/2.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/howitworks/beacon_data.png" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -480,7 +378,7 @@
 
     <!-- DH culture -->
     <!-- This is the part that is not working - Eddie please take a look -->
-    <section id="culture">
+    <section id="culture" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -488,7 +386,7 @@
           </div>
         </div>
         <div class="row">
-          <blockquote class="padding">
+          <blockquote class="blockquote padding">
             <div class="blockquote-content padding">
               <p class="oblique">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>
@@ -506,55 +404,6 @@
       </div>
       </div>
     </section>
-
-    <!-- Clients
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
--->
-
-    <!-- Begin MailChimp Signup Form -->
-    <section id="newsletter" class="bg-light">
-      <div class="container">
-        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-        <div id="mc_embed_signup">
-          <form action="https://dashboardhub.us17.list-manage.com/subscribe/post?u=0f390eebc68ad563bffc5926a&amp;id=1a1151bd19" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-              <label for="mce-EMAIL">Subscribe to our newsletter (no more than one email a month, promise!)</label>
-              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address :)" required>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0f390eebc68ad563bffc5926a_1a1151bd19" tabindex="-1" value=""></div>
-              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!--End mc_embed_signup-->
 
     <!-- Footer -->
     <footer>
@@ -606,222 +455,12 @@
       </div>
     </footer>
 
-    <!-- Portfolio Modals -->
-
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Threads</li>
-                    <li>Category: Illustration</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Finish</li>
-                    <li>Category: Identity</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="node_modules/jquery.easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
