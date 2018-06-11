@@ -11,28 +11,6 @@ div.intro-content {
     padding: 1rem;
 }
 
-blockquote {
-    padding: 0 50px;
-    margin-left: 0;
-    border-left: 2px solid #4D4D4D;
-}
-
-blockquote-inverse {
-    padding: 0 50px 0 200px;
-    margin-right: 0;
-    border-right: 2px solid #4D4D4D;
-    text-align: right;
-}
-
-footer {
-    text-align: left;
-}
-
-footer-inverse {
-    text-align: right;
-    white-space: pre;
-}
-
 ul.timeline li div.timeline-image {
     background-color: #fff;
 }
