@@ -16,8 +16,10 @@ deploy.version: pipeline.version.deploy.start sync pipeline.version.deploy.finis
 
 build:
 	npm install
+	./node_modules/gulp/bin/gulp.js
 
 sync: guard-AWS_CLOUDFRONT_ID
+	rm -fr ./node_modules/
 	aws s3 sync . s3://dashboardhub.io --delete --region eu-west-2
 	aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_ID} --paths /\*
 
