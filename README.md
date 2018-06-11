@@ -17,4 +17,9 @@ Currently using theme: https://github.com/BlackrockDigital/startbootstrap-agency
 
 * Clone this repo
 * `npm install`
+* `./node_modules/gulp/bin/gulp.js`
 * Open `index.html` in browser
+
+After making css changes:
+
+* `./node_modules/gulp/bin/gulp.js`
