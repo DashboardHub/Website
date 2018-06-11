@@ -11,12 +11,6 @@ div.intro-content {
     padding: 1rem;
 }
 
-blockquote {
-    padding: 0 50px;
-    margin-left: 0;
-    border-left: 2px solid #4D4D4D;
-}
-
 ul.timeline li div.timeline-image {
     background-color: #fff;
 }
