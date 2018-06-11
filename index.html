@@ -64,7 +64,6 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-content rounded border border-light">
-            <div class="intro-heading text-uppercase">DashboardHub</div>
             <div class="intro-lead-in text-uppercase">The pulse of your CI & CD Pipeline</div>
 
             <div id="mc_embed_signup">
@@ -465,6 +464,19 @@
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
 
+    <!-- doorbell -->
+    <script type="text/javascript">
+        window.doorbellOptions = {
+            id: '1555',
+            appKey: '2jiOQJZu6F5HpmNNwpC8ps4Ge02RLfoifGcfCkEKnUDGYMwB6EWdNoyVJXdZwMms'
+        };
+        (function(w, d, t) {
+            var hasLoaded = false;
+            function l() { if (hasLoaded) { return; } hasLoaded = true; window.doorbellOptions.windowLoaded = true; var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://embed.doorbell.io/button/'+window.doorbellOptions['id']+'?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g); }
+            if (w.attachEvent) { w.attachEvent('onload', l); } else if (w.addEventListener) { w.addEventListener('load', l, false); } else { l(); }
+            if (d.readyState == 'complete') { l(); }
+        }(window, document, 'script'));
+    </script>
   </body>
 
 </html>
