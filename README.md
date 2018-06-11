@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/DashboardHub/Website.svg?branch=master)](https://travis-ci.org/DashboardHub/Website)
+[![DashboardHub Badge](https://img.shields.io/badge/DashboardHub-Website-orange.svg)](https://pipeline.dashboardhub.io/4c561a20-ddc0-11e7-8be6-8d1c32f4579f/view)
 
 # DashboardHub Website
 
@@ -8,25 +9,12 @@ Url: https://dashboardhub.io
 
 ---
 
-Currently using theme: https://github.com/IronSummitMedia/startbootstrap-creative
+Currently using theme: https://github.com/BlackrockDigital/startbootstrap-agency
 
 ---
 
 ## Installation
 
-* Install [Jekyll](http://jekyllrb.com)
 * Clone this repo
-* Start Jekyll server `jekyll serve`
-
-### Jeyll with Docker
-
-```
-export JEKYLL_VERSION=3.5
-docker run --rm --volume=$PWD:/srv/jekyll -p 35729:35729 -p 4000:4000 -it jekyll/builder:$JEKYLL_VERSION jekyll serve
-```
-
-More info https://github.com/envygeeks/jekyll-docker
-
-## Deploy
-
-AWS_CLOUDFRONT_ID=ABC...XYZ make deploy
+* `npm install`
+* Open `index.html` in browser

@@ -1,0 +1,16 @@
+nav#mainNav {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-brand {
+    width: 25%;
+}
+
+div.intro-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+}
+
+ul.timeline li div.timeline-image {
+    background-color: #fff;
+}

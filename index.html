@@ -1,23 +1,478 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="home">
+  <head>
 
-  <h1 class="page-heading">Posts</h1>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <title>DashboardHub - Your Pipeline Heartbeat</title>
+    <link rel="shortcut icon" href="https://cdn.dashboardhub.io/favicon.ico">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <!-- Bootstrap core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- Custom fonts for this template -->
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-</div>
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/override.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top gradient-bg" id="mainNav">
+      <div class="container">
+        <a class="js-scroll-trigger navbar-brand" href="#page-top"><img class="img-fluid" src="https://cdn.dashboardhub.io/logo-horizontal-std.svg"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#howitworks">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://medium.com/@dashboardhub" target="_blank">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://pipeline.dashboardhub.io/" target="_blank">App</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-content rounded border border-light">
+            <div class="intro-lead-in text-uppercase">The pulse of your CI & CD Pipeline</div>
+
+            <div id="mc_embed_signup">
+              <form action="https://dashboardhub.us17.list-manage.com/subscribe/post?u=0f390eebc68ad563bffc5926a&amp;id=1a1151bd19" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                  <div class="form-inline justify-content-center">
+                    <label for="mce-EMAIL" class="p-2">Subscribe to our mailing list</label>
+                    <input type="email" value="" name="EMAIL" class="email form-control p-2" id="mce-EMAIL" placeholder="email address" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0f390eebc68ad563bffc5926a_1a1151bd19" tabindex="-1" value=""></div>
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-light p-2 m-2">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">See it now</h2>
+          </div>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/z0RXBBtosD0" allowfullscreen></iframe>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading text-uppercase">No setup</h4>
+            <p class="text-muted">Get up and running immediately. No need to register, use your GitHub login.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading text-uppercase">Open Source on GitHub</h4>
+            <p class="text-muted">Completely open and transparent, community driven. You drive the features you want. <a href="https://github.com/DashboardHub/PipelineDashboard/">View the code in our repo</a> - we welcome all contributions!</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-dashboard fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading text-uppercase">Pipeline Overview</h4>
+            <p class="text-muted">See your environment pipeline and releases on a single screen.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading text-uppercase">Made with Love</h4>
+            <p class="text-muted">We eat our own dogfood.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading text-uppercase">Community</h4>
+            <p class="text-muted">Followers - build a community and stay up-to-date.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading text-uppercase">Simple monitoring</h4>
+            <p class="text-muted">Simple Monitoring for your Environment.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading text-uppercase">Scheduled releases / deployments</h4>
+            <p class="text-muted">Schedule releases / deployments to notify your community.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-bell fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading text-uppercase">Notifications</h4>
+            <p class="text-muted">Get notified when releasing / deploying and when completed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light" id="howitworks">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">How it works: your user journey</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/howitworks/create_environment.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="text-uppercase timeline-bold-text">Create Your Environment</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <h4>All we need is your domain/sub-domain! We cater for Build Only, Deploy Only and Build & Deploy environments</h4>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/howitworks/create_monitor.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="text-uppercase timeline-bold-text">Create monitors to ping your domains</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <h4>On the overview page of the environment you have just created, you can create monitors (which send pings to your domains/sub-domains to ensure they're still up and running).  You'll be notified at once if pings are unsuccessful</h4>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/howitworks/beacon_data.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="text-uppercase timeline-bold-text">Beacon Build/Deploy Data</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <h4>Once you've finished a build or a deploy, in order to send (i.e.  "beacon") that data to DashboardHub, simply fill out a short form, or use a curl command. Voila!</h4>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/howitworks/track.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="text-uppercase timeline-bold-text">Track your environments</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <h4>Pretty graphs galore at DashboardHub to track everything from information about your releases, versions and ping history!</h4>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <a href="https://pipeline.dashboardhub.io/">
+                    <img class="rounded-circle img-fluid" src="https://cdn.dashboardhub.io/icon-only-orange.svg" alt="DashboardHub Logo">
+                  </a>
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-body">
+                    <a href="https://pipeline.dashboardhub.io/">
+                      <h4 class="text-uppercase timeline-bold-text">Get started now!</h4>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Team DashboardHub</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/eddie.jpg" alt="">
+              <h4>Eddie Jaoude</h4>
+              <p class="text-muted">CEO</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://github.com/eddiejaoude">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/eddiejaoude">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/eddiejaoude/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/andrew.jpg" alt="">
+              <h4>Andrew Cunliffe</h4>
+              <p class="text-muted">Consultant</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://github.com/andrew-cunliffe">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/_andrewcunliffe">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/andrewcunliffe/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/csenge.jpg" alt="">
+              <h4>Csenge Pal</h4>
+              <p class="text-muted">Marketing Intern</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://github.com/csengep">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/csengussz97">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/csenge-pal-041b22104/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/theo.jpeg" alt="">
+              <h4>Theo Kefala</h4>
+              <p class="text-muted">Software Engineer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://github.com/theodosiakefala">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/theodosiakefala?lang=en">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/theodosia-kefala-ab429215a/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/tilly.jpg" alt="">
+              <h4>Bertilla Chow</h4>
+              <p class="text-muted">Software Engineer Intern</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://github.com/chowbertilla">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/bertillachow/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DH culture -->
+    <!-- This is the part that is not working - Eddie please take a look -->
+    <section id="culture" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Culture: what's it like working at DashboardHub?</h2>
+          </div>
+        </div>
+        <blockquote class="blockquote">
+          <p> "DashboardHub has adopted a startup culture that promotes inclusivity and flexibility for those involved. A key aspect in making this a successful culture is the adoption of Open Source development in harmony with Remote Working. All of the team at DashboardHub are treated as equals and trusted to perform their tasks autonomously knowing they have the full support of the company's founders." </p>
+          <footer class="blockquote-footer text-left">Andrew Cunliffe, Consultant</footer>
+        </blockquote>
+        <blockquote class="blockquote text-right">
+          <p>"Transparency, trust and inclusion are all vital to our team’s success."</p>
+          <footer class="blockquote-footer text-right">Eddie Jaoude, CEO</footer>
+        </blockquote>
+        <blockquote class="blockquote">
+          <p> "If you want a truly great team and company culture give people direction and support but ultimately let them get on with it in their own way; DashboardHub gets this balance just right." </p>
+          <footer class="blockquote-footer text-left">Csenge Pal, Marketing Intern</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; DashboardHub 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://github.com/DashboardHub/PipelineDashboard">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/dashboardhub">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/dashboardhub/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://medium.com/@dashboardhub">
+                  <i class="fa fa-medium"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/showcase/dashboardhub/">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="node_modules/jquery.easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+    <!-- doorbell -->
+    <script type="text/javascript">
+        window.doorbellOptions = {
+            id: '1555',
+            appKey: '2jiOQJZu6F5HpmNNwpC8ps4Ge02RLfoifGcfCkEKnUDGYMwB6EWdNoyVJXdZwMms'
+        };
+        (function(w, d, t) {
+            var hasLoaded = false;
+            function l() { if (hasLoaded) { return; } hasLoaded = true; window.doorbellOptions.windowLoaded = true; var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://embed.doorbell.io/button/'+window.doorbellOptions['id']+'?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g); }
+            if (w.attachEvent) { w.attachEvent('onload', l); } else if (w.addEventListener) { w.addEventListener('load', l, false); } else { l(); }
+            if (d.readyState == 'complete') { l(); }
+        }(window, document, 'script'));
+    </script>
+  </body>
+
+</html>
+
