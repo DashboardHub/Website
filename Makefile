@@ -20,6 +20,7 @@ build:
 
 sync: guard-AWS_CLOUDFRONT_ID
 	rm -fr ./node_modules/
+	rm -fr .git/
 	aws s3 sync . s3://dashboardhub.io --delete --region eu-west-2
 	aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_ID} --paths /\*
 
