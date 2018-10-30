@@ -3,6 +3,20 @@
 
 # DashboardHub Website
 
+what is DashboardHub?
+
+DashboardHub is an elegant solution to enforce effective communication within the team working on a project. It address the common issue of members not being aware of what is being deployed to test, stage or production environment, and provides the most efficient solution. 
+
+
+DashboardHub features:
+
+* keeps track of projects
+* allows you to create your own environment for project
+* keeps track of release data
+* update build/deploy status with auto generated curl commands
+* monitor your build 
+
+
 Information website about Dashboard Hub
 
 Url: https://dashboardhub.io
