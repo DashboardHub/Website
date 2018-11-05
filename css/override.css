@@ -20,3 +20,7 @@ ul.timeline li div.timeline-image {
 .section-heading{
   padding-bottom: 3rem;
 }
+
+p.subtitle {
+    margin-top: 2rem;
+}
