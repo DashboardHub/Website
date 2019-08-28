@@ -1,39 +1,27 @@
-[![Build Status](https://travis-ci.org/DashboardHub/Website.svg?branch=master)](https://travis-ci.org/DashboardHub/Website)
-[![DashboardHub Badge](https://img.shields.io/badge/DashboardHub-Website-orange.svg)](https://pipeline.dashboardhub.io/4c561a20-ddc0-11e7-8be6-8d1c32f4579f/view)
+# DashboardHub
 
-# DashboardHub Website
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.1.
 
-what is DashboardHub?
+## Development server
 
-DashboardHub is an elegant solution to enforce effective communication within the team working on a project. It address the common issue of members not being aware of what is being deployed to test, stage or production environment, and provides the most efficient solution. 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Code scaffolding
 
-DashboardHub features:
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-* keeps track of projects
-* allows you to create your own environment for project
-* keeps track of release data
-* update build/deploy status with auto generated curl commands
-* monitor your build 
+## Build
 
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-Information website about Dashboard Hub
+## Running unit tests
 
-Url: https://dashboardhub.io
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
----
+## Running end-to-end tests
 
-Currently using theme: https://github.com/BlackrockDigital/startbootstrap-agency
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
----
+## Further help
 
-## Installation
-
-* Clone this repo
-* `npm install`
-* `./node_modules/gulp/bin/gulp.js`
-* Open `index.html` in browser
-
-After making css changes:
-
-* `./node_modules/gulp/bin/gulp.js`
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
