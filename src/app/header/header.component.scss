@@ -1,0 +1,17 @@
+mat-toolbar {
+
+  &:first-child {
+    height: 150px;
+
+    img {
+      max-height: 100px;
+      max-width: 100px;
+    }
+  }
+
+  &.navigation {
+    img {
+      height: 60px;
+    }
+  }
+}

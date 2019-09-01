@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+mat-card {
+  mat-card-content {
+    img {
+      background: #ccc;
+      border: 2px solid #666;
+      padding: 2px;
+      width:100%;
+    }
+  }
+}
