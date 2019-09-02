@@ -3,11 +3,19 @@
 
 mat-card {
   mat-card-content {
-    img {
+    img.frame {
       background: #ccc;
       border: 2px solid #666;
       padding: 2px;
       width:100%;
+    }
+
+    img.mascot {
+      width: 150px;
+    }
+
+    img.mascot-flip {
+      transform: scaleX(-1);
     }
   }
 }

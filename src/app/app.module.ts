@@ -15,6 +15,7 @@ import { ErrorComponent } from './error/error.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { OpenSourceComponent } from './opensource/opensource.component';
 import { WorksComponent } from './works/works.component';
 
 @NgModule({
@@ -25,6 +26,7 @@ import { WorksComponent } from './works/works.component';
     FooterComponent,
     HeaderComponent,
     HomeComponent,
+    OpenSourceComponent,
     WorksComponent,
   ],
   imports: [

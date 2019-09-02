@@ -5,11 +5,14 @@
     <mat-card-subtitle>What is DashboardHub</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content fxLayout.gt-sm="row" fxLayoutAlign="space-between center" fxLayout.lt-md="column">
-    <p>
-      The no-setup, open-source platform that makes your deployment pipeline more transparent by ensuring everybody on
-      your team is on the same page. DashboardHub does this by gathering the most relevant, up-to-date information in
-      realtime.
-    </p>
-    <img src="assets/screenshots/dashboard.png" alt="DashboardHub project dashboard screenshot" />
+    <span fxLayout.gt-sm="column" fxLayoutAlign="space-between center" fxLayout.lt-md="row">
+      <img class="mascot mascot-flip" src="https://cdn.dashboardhub.io/mascot/8.png" />
+        <p>
+          The no-setup, open-source platform that makes your deployment pipeline more transparent by ensuring everybody on
+          your team is on the same page. DashboardHub does this by gathering the most relevant, up-to-date information in
+          realtime.
+        </p>
+    </span>
+    <img class="frame" src="assets/screenshots/dashboard.png" alt="DashboardHub project dashboard screenshot" />
   </mat-card-content>
 </mat-card>
