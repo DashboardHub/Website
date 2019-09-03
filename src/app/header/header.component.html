@@ -1,23 +1,27 @@
-<mat-toolbar fxLayout="row" fxLayoutAlign="space-between center" color="accent">
-  <span>
-    <mat-list role="list" [@flyInOut]="in">
-        <mat-list-item role="listitem"><mat-icon aria-hidden="false" aria-label="Pipeline transparency">check</mat-icon>Pipeline transparency</mat-list-item>
-        <mat-list-item role="listitem"><mat-icon aria-hidden="false" aria-label="Project heartbeat">check</mat-icon>Project heartbeat</mat-list-item>
-        <mat-list-item role="listitem"><mat-icon aria-hidden="false" aria-label="Open source">check</mat-icon>Open source</mat-list-item>
-      </mat-list>
-  </span>
-  <img fxHide.xs src="https://cdn.dashboardhub.io/mascot/15.png" />
+<mat-toolbar fxLayout="column" fxLayoutAlign="space-between center">
+  <div class="container" fxLayout="row" fxLayoutAlign="space-between center">
+    <span>
+      <mat-list role="list" [@flyInOut]="in">
+          <mat-list-item role="listitem"><mat-icon aria-hidden="false" aria-label="Pipeline transparency">check</mat-icon>Pipeline transparency</mat-list-item>
+          <mat-list-item role="listitem"><mat-icon aria-hidden="false" aria-label="Project heartbeat">check</mat-icon>Project heartbeat</mat-list-item>
+          <mat-list-item role="listitem"><mat-icon aria-hidden="false" aria-label="Open source">check</mat-icon>Open source</mat-list-item>
+        </mat-list>
+    </span>
+    <img fxHide.xs src="https://cdn.dashboardhub.io/mascot/15.png" />
+  </div>
 </mat-toolbar>
 
-<mat-toolbar fxLayout="row" fxLayoutAlign="space-between center" class="navigation">
-  <img fxHide.lt-md src="https://cdn.dashboardhub.io/logo/logo-horizontal-std.svg" alt="DashboradHub logo">
-  <img fxHide.gt-sm src="https://cdn.dashboardhub.io/logo/icon-only-orange.svg" alt="DashboradHub logo" mat-card-avatar>
-  <span>
-    <button mat-button><mat-icon aria-hidden="false" aria-label="About">description</mat-icon></button>
-    <button mat-button><mat-icon aria-hidden="false" aria-label="How it works">phonelink_setup</mat-icon></button>
-    <button mat-button><mat-icon aria-hidden="false" aria-label="Open Source on GitHub">lock_open</mat-icon></button>
-    <button mat-button><mat-icon aria-hidden="false" aria-label="As seen at">streetview</mat-icon></button>
-    <button mat-button><mat-icon aria-hidden="false" aria-label="Features">list</mat-icon></button>
-    <button mat-button><mat-icon aria-hidden="false" aria-label="Team">people</mat-icon></button>
-  </span>
+<mat-toolbar color="accent" fxLayout="column" fxLayoutAlign="space-between center" class="navigation">
+  <div class="container" fxLayout="row" fxLayoutAlign="space-between center">
+    <img fxHide.lt-md src="https://cdn.dashboardhub.io/logo/logo-horizontal-std.svg" alt="DashboradHub logo">
+    <img fxHide.gt-sm src="https://cdn.dashboardhub.io/logo/icon-only-orange.svg" alt="DashboradHub logo" mat-card-avatar>
+    <span>
+      <button mat-button><mat-icon aria-hidden="false" aria-label="About">description</mat-icon></button>
+      <button mat-button><mat-icon aria-hidden="false" aria-label="How it works">phonelink_setup</mat-icon></button>
+      <button mat-button><mat-icon aria-hidden="false" aria-label="Open Source on GitHub">lock_open</mat-icon></button>
+      <button mat-button><mat-icon aria-hidden="false" aria-label="As seen at">streetview</mat-icon></button>
+      <button mat-button><mat-icon aria-hidden="false" aria-label="Features">list</mat-icon></button>
+      <button mat-button><mat-icon aria-hidden="false" aria-label="Team">people</mat-icon></button>
+    </span>
+  </div>
 </mat-toolbar>

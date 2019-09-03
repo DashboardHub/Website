@@ -1,12 +1,13 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatStepperModule } from '@angular/material/stepper';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
 
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -38,6 +39,7 @@ import { WorksComponent } from './works/works.component';
     MatCardModule,
     MatIconModule,
     MatListModule,
+    MatStepperModule,
     MatToolbarModule,
   ],
   providers: [],

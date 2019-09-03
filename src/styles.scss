@@ -1,7 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import '~normalize.css';
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$mat-orange: (
+  50 : #fdede0,
+  100 : #fad3b3,
+  200 : #f7b680,
+  300 : #f4984d,
+  400 : #f18226,
+  500 : #ef6c00,
+  600 : #ed6400,
+  700 : #eb5900,
+  800 : #e84f00,
+  900 : #e43d00,
+  A100 : #ffffff,
+  A200 : #ffe0d8,
+  A400 : #ffb7a5,
+  A700 : #ffa38b,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #000000,
+      500 : #000000,
+      600 : #000000,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+  )
+);
+
+/* Setup site theme */
+$dashboard-primary: mat-palette($mat-orange, 500);
+$dashboard-accent: mat-palette($mat-orange, 800, A100, A400);
+$dashboard-warn: mat-palette($mat-red, 600);
+$dashboard-theme: mat-light-theme(
+  $dashboard-primary,
+  $dashboard-accent,
+  $dashboard-warn
+);
+
+@include angular-material-theme($dashboard-theme);
+
+/* Setup Angular Material typography */
+
+$dashboard-global-typography: mat-typography-config(
+  $font-family: 'Roboto',
+  $body-1: mat-typography-level(0.9rem, 1.5em, 400),
+  $body-2: mat-typography-level(0.9rem, 1.5em, 700)
+);
+
+@include angular-material-typography($dashboard-global-typography);
+
+$dashboard-base-typography: mat-typography-config(
+  $font-family: 'Roboto',
+  $headline: mat-typography-level(2.4rem, 1.5em, 100),
+  $title: mat-typography-level(1.7rem, 1.5em, 300),
+  $subheading-2: mat-typography-level(1.4rem, 1.5em, 300),
+  $subheading-1: mat-typography-level(1.1rem, 1.5em, 400),
+  $body-1: mat-typography-level(0.9rem, 1.5em, 400),
+  $body-2: mat-typography-level(0.9rem, 1.5em, 700),
+  $caption: mat-typography-level(0.8rem, 1.5em, 400)
+);
+
+@include mat-base-typography($dashboard-base-typography);
+
+$dashboard-toolbar-typography: mat-typography-config(
+  $font-family: 'Roboto',
+  $title: mat-typography-level(1.3rem, 1.3em, 300)
+);
+
+@include mat-toolbar-typography($dashboard-toolbar-typography);
+
+$dashboard-card-typography: mat-typography-config(
+  $font-family: 'Roboto',
+  $headline: mat-typography-level(1.7rem, 1.5em, 300),
+  $title: mat-typography-level(20px, 1.5em, 300)
+);
+
+@include mat-card-typography($dashboard-card-typography);
+
+.container {
+  width: 960px;
+}
 
 mat-card {
+  margin: 1em 0em;
+
   mat-card-content {
     img.frame {
       background: #ccc;
