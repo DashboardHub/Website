@@ -1,20 +1,38 @@
 language: node_js
 node_js:
-  - "8"
+  - "10"
 branches:
   only:
   - master
+  - v0.11.9
+
+addons:
+  apt:
+    packages:
+      - libgconf-2-4
+cache:
+  npm: true
+  directories:
+    - ~/.cache
 
 before_install:
-  - sudo apt-get install python3
-  - sudo pip install awscli
+  - npm cache --force clean
+  - npm install -g firebase-tools
 
 script:
-  - make build.version
+  - npm install
+  - npm run build
 
 deploy:
   - provider: script
     skip_cleanup: true
-    script: make deploy.version
+    message: "Deploying v0.11.dev-$TRAVIS_BUILD_NUMBER-ALPHA"
+    script: sh ./scripts/deployment/dev.sh
+    on:
+      branch: v0.11.9
+  - provider: script
+    skip_cleanup: true
+    message: "Deploying v0.11-$TRAVIS_BUILD_NUMBER-ALPHA"
+    script: sh ./scripts/deployment/prod.sh
     on:
       branch: master
