@@ -1,27 +1,26 @@
-<mat-toolbar fxLayout="column" fxLayoutAlign="space-between center">
-  <div class="container" fxLayout="row" fxLayoutAlign="space-between center">
-    <span>
-      <mat-list role="list" [@flyInOut]="in">
-          <mat-list-item role="listitem"><mat-icon aria-hidden="false" aria-label="Pipeline transparency">check</mat-icon>Pipeline transparency</mat-list-item>
-          <mat-list-item role="listitem"><mat-icon aria-hidden="false" aria-label="Project heartbeat">check</mat-icon>Project heartbeat</mat-list-item>
-          <mat-list-item role="listitem"><mat-icon aria-hidden="false" aria-label="Open source">check</mat-icon>Open source</mat-list-item>
-        </mat-list>
-    </span>
-    <img fxHide.xs src="https://cdn.dashboardhub.io/mascot/15.png" />
-  </div>
-</mat-toolbar>
+<dh-content id="header" [dark]="true">
+    <div class="header">
+        <div>
+            <h1>DashboardHub</h1>
+            <div class="header__highlights">
+                <div><fa-icon icon="check"></fa-icon> Pipeline transparency</div>
+                <div><fa-icon icon="check"></fa-icon> Project heartbeat</div>
+                <div><fa-icon icon="check"></fa-icon> Open source</div>
+            </div>
+        </div>
+        <img class="header__image" src="https://cdn.dashboardhub.io/mascot/15.png" alt="DashboardHub Mascot" />
+    </div>
+</dh-content>
 
-<mat-toolbar color="accent" fxLayout="column" fxLayoutAlign="space-between center" class="navigation">
-  <div class="container" fxLayout="row" fxLayoutAlign="space-between center">
-    <img fxHide.lt-md src="https://cdn.dashboardhub.io/logo/logo-horizontal-std.svg" alt="DashboradHub logo">
-    <img fxHide.gt-sm src="https://cdn.dashboardhub.io/logo/icon-only-orange.svg" alt="DashboradHub logo" mat-card-avatar>
-    <span>
-      <button mat-button><mat-icon aria-hidden="false" aria-label="About">description</mat-icon></button>
-      <button mat-button><mat-icon aria-hidden="false" aria-label="How it works">phonelink_setup</mat-icon></button>
-      <button mat-button><mat-icon aria-hidden="false" aria-label="Open Source on GitHub">lock_open</mat-icon></button>
-      <button mat-button><mat-icon aria-hidden="false" aria-label="As seen at">streetview</mat-icon></button>
-      <button mat-button><mat-icon aria-hidden="false" aria-label="Features">list</mat-icon></button>
-      <button mat-button><mat-icon aria-hidden="false" aria-label="Team">people</mat-icon></button>
-    </span>
-  </div>
-</mat-toolbar>
+<dh-nav>
+    <img dhNavImage class="hide__mobile" src="https://cdn.dashboardhub.io/logo/logo-horizontal-std.svg" alt="DashboradHub logo">
+    <img dhNavImage class="hide__desktop" src="https://cdn.dashboardhub.io/logo/icon-only-orange.svg" alt="DashboradHub logo">
+
+    <a href="#about"><fa-icon [icon]="['fas', 'file-alt']"></fa-icon></a>
+    <a href="#setup"><fa-icon [icon]="['fas', 'cogs']"></fa-icon></a>
+    <a href="#open-source"><fa-icon [icon]="['fas', 'lock-open']"></fa-icon></a>
+    <a href="#events"><fa-icon [icon]="['far', 'calendar']"></fa-icon></a>
+    <a href="#features"><fa-icon [icon]="['fas', 'list']"></fa-icon></a>
+    <a href="#team"><fa-icon [icon]="['fas', 'users']"></fa-icon></a>
+    <a href="https://pipeline.dashboardhub.io/"><fa-icon [icon]="['fas', 'chart-line']"></fa-icon></a>
+</dh-nav>

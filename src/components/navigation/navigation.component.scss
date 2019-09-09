@@ -1,0 +1,33 @@
+@import '../../styles';
+
+section {
+    background-color: $color-brand-font-light;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    grid-gap: 1rem;
+    justify-items: end;
+
+    height: 54px;
+    margin: auto;
+    padding: 0 1rem;
+
+    &__items {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: min-content;
+        grid-gap: 1rem;
+    }
+
+    a {
+        line-height: 0;
+    }
+
+    @media all and (min-width: 800px) {
+        width: 760px;
+        padding: 0;
+    }
+}

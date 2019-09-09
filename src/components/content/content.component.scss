@@ -1,0 +1,16 @@
+@import '../../styles';
+
+.dark {
+    color: white;
+    background-color: $color-brand-accent;
+}
+
+.content {
+    margin: auto;
+    padding: 2rem 1rem;
+
+    @media all and (min-width: 800px) {
+        width: 760px;
+        padding: 2rem 0;
+    }
+}

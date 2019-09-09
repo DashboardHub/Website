@@ -1,7 +1,8 @@
-div.error {
-  height: 80vh;
+.error {
+    text-align: center;
 
-  img {
-    width: 40%;
-  }
+    &__image {
+        width: 80%;
+        max-width: 420px;
+    }
 }
