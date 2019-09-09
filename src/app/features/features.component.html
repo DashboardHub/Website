@@ -1,32 +1,28 @@
-<div fxLayout="column" fxLayoutAlign="space-between center">
-  <div class="container" fxLayout="row" fxLayoutAlign="space-between center">
-    <mat-card>
-      <mat-card-header>
-          <mat-icon aria-hidden="false" aria-label="Features" mat-card-avatar>list</mat-icon>
-        <mat-card-title>Features</mat-card-title>
-        <mat-card-subtitle>Current features</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content fxLayout.gt-sm="row" fxLayoutAlign="space-between center" fxLayout.lt-md="column">
-        <img class="mascot" src="https://cdn.dashboardhub.io/mascot/11.png" />
-        <mat-list>
-          <mat-list-item>
-            <h4 mat-line>GitHub Login</h4>
-            <p mat-line>Simple & secure authentiaction</p>
-          </mat-list-item>
-          <mat-list-item>
-            <h4 mat-line>Unlimited public projects</h4>
-            <p mat-line>Create as many projects as you need</p>
-          </mat-list-item>
-          <mat-list-item>
-            <h4 mat-line>Monitor your project deployments</h4>
-            <p mat-line>Check your deployments are always running</p>
-          </mat-list-item>
-          <mat-list-item>
-            <h4 mat-line>Realtime sync with GitHub</h4>
-            <p mat-line>When GitHub knows DashboardHub is also aware</p>
-          </mat-list-item>
-        </mat-list>
-      </mat-card-content>
-    </mat-card>
-  </div>
-</div>
+<dh-content id="features">
+    <dh-headline>
+        <img dhHeadlineImage src="https://cdn.dashboardhub.io/mascot/11.png" alt="DashboardHub Mascot" />
+        <h2>Features</h2>
+        <p>Current features</p>
+    </dh-headline>
+    <div class="features">
+        <div class="features__item">
+            <h4>GitHub Login</h4>
+            <p>Simple & secure authentication</p>
+        </div>
+
+        <div class="features__item">
+            <h4>Unlimited public projects</h4>
+            <p>Create as many projects as you need</p>
+        </div>
+
+        <div class="features__item">
+            <h4>Monitor your project deployments</h4>
+            <p>Check your deployments are always running</p>
+        </div>
+
+        <div class="features__item">
+            <h4>Realtime sync with GitHub</h4>
+            <p>When GitHub knows DashboardHub is also aware</p>
+        </div>
+    </div>
+</dh-content>

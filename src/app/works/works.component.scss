@@ -1,0 +1,16 @@
+@import '../../styles';
+
+.setup {
+    &__step {
+        margin: 1rem 0;
+        padding: 0.5rem 1rem;
+        border-left: 3px solid $color-brand-primary;
+
+        img {
+            margin: 0.5rem 0;
+            width: auto;
+            max-width: 100%;
+            max-height: 400px;
+        }
+    }
+}

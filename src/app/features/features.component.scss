@@ -1,0 +1,14 @@
+@import '../../styles';
+
+.features {
+    border: 2px solid lighten($color-brand-accent, 25%);
+
+    &__item {
+        padding: 0.4rem;
+
+        &:nth-child(odd) {
+            background-color: lighten($color-brand-accent, 35%);
+        }
+    }
+
+}
