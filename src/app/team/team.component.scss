@@ -1,0 +1,20 @@
+@import '../../styles';
+
+.quotes {
+
+    &__entry {
+        *:first-child {
+            padding: 0.4rem;
+            border: 2px solid lighten($color-brand-accent, 25%);
+        }
+        *:last-child {
+            font-style: italic;
+            text-align: end;
+        }
+
+        &:not(:last-of-type) {
+            margin-bottom: 1rem;
+        }
+    }
+
+}

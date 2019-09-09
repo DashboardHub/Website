@@ -1,35 +1,31 @@
-<div fxLayout="column" fxLayoutAlign="space-between center">
-  <div class="container" fxLayout="row" fxLayoutAlign="space-between center">
-    <mat-card fxFlex>
-      <mat-card-header>
-        <mat-icon aria-hidden="false" aria-label="How it works" mat-card-avatar>phonelink_setup</mat-icon>
-        <mat-card-title>How it works</mat-card-title>
-        <mat-card-subtitle>Workflow and benefits</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content fxLayout.gt-sm="row" fxLayoutAlign="space-between center" fxLayout.lt-md="column">
-        <mat-vertical-stepper linear="true">
-          <mat-step>
-            <ng-template matStepLabel>
-              Login with GitHub
-            </ng-template>
-            Step 1
-            <button mat-button matStepperNext><mat-icon aria-hidden="false" aria-label="About">description</mat-icon></button>
-          </mat-step>
-          <mat-step>
-            <ng-template matStepLabel>
-              Create a project
-            </ng-template>
-            Step 2
-          </mat-step>
-          <mat-step>
-            <ng-template matStepLabel>
-              Add your repositories to your project
-            </ng-template>
-            Step 3
-          </mat-step>
-        </mat-vertical-stepper>
-        <img class="mascot" src="https://cdn.dashboardhub.io/mascot/20.png" />
-      </mat-card-content>
-    </mat-card>
-  </div>
-</div>
+<dh-content id="setup">
+    <dh-headline>
+        <img dhHeadlineImage src="https://cdn.dashboardhub.io/mascot/20.png" alt="DashboardHub Mascot" />
+        <h2>How it works</h2>
+        <p>Workflow and benefits</p>
+    </dh-headline>
+    <div class="setup">
+        <h4>Login with GitHub</h4>
+        <div class="setup__step">
+            <p>No need to register, login with your existing GitHub account</p>
+        </div>
+
+        <h4>Create a project</h4>
+        <div class="setup__step">
+            <p>Create a project with just a "name"</p>
+            <img src="/assets/screenshots/create-project.png" alt="Create project screenshot"/>
+        </div>
+
+        <h4>Add your repositories to your project</h4>
+        <div class="setup__step">
+            <p>Select 1 or more repositories</p>
+            <img src="assets/screenshots/repositories.png" alt="Choose repositories screenshot"/>
+        </div>
+
+        <h4>View the heartbeat of your project</h4>
+        <div class="setup__step">
+            <p>Watch the overview of your GitHub project. Go to the <a href="https://pipeline.dashboardhub.io/">app now <fa-icon [icon]="['fas', 'chart-line']"></fa-icon></a></p>
+            <img src="assets/screenshots/dashboard.png" alt="Dashboard screenshot"/>
+        </div>
+    </div>
+</dh-content>

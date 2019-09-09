@@ -1,17 +1,36 @@
-mat-toolbar {
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
 
-  &:first-child {
-    height: 150px;
-
-    img {
-      max-height: 100px;
-      max-width: 100px;
+    &__highlights {
+        > * {
+            margin: 0.4rem 0;
+            line-height: 1.4rem;
+        }
     }
-  }
 
-  &.navigation {
-    img {
-      height: 60px;
+    &__image {
+        width: auto;
+        height: 200px;
     }
-  }
+
+    fa-icon {
+        margin-right: 0.4rem;
+    }
+
+}
+
+.hide {
+    &__mobile {
+        @media all and (max-width: 799px) {
+            display: none
+        }
+    }
+
+    &__desktop {
+        @media all and (min-width: 800px) {
+            display: none
+        }
+    }
 }

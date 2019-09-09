@@ -1,0 +1,10 @@
+.content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content min-content;
+    grid-gap: 2rem;
+
+    img {
+        width: 100%;
+    }
+}
