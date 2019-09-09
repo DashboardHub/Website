@@ -5,6 +5,7 @@ branches:
   only:
   - master
   - v0.11-beta
+  - /issue-*/
 
 addons:
   apt:
