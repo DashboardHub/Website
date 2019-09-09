@@ -29,7 +29,7 @@ deploy:
     message: "Deploying v0.11.dev-$TRAVIS_BUILD_NUMBER-ALPHA"
     script: sh ./scripts/deployment/dev.sh
     on:
-      branch: v0.11.9
+      branch: v0.11-beta
   - provider: script
     skip_cleanup: true
     message: "Deploying v0.11-$TRAVIS_BUILD_NUMBER-ALPHA"
