@@ -1,0 +1,15 @@
+.content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content min-content;
+    grid-gap: 2rem;
+
+    img {
+        width: 100%;
+    }
+
+    @media all and (min-width: 800px) {
+        grid-template-columns: 1fr 18rem;
+        grid-template-rows: auto;
+    }
+}

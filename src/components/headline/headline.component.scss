@@ -1,0 +1,19 @@
+@import '../../styles';
+
+.headline {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+    margin: 0 0 1rem;
+
+    &__content {
+        &__title {
+            color: $color-brand-accent;
+        }
+    }
+
+    @media all and (min-width: 800px) {
+        grid-template-columns: 100px 1fr;
+    }
+}

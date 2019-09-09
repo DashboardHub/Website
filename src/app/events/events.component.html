@@ -1,32 +1,28 @@
-<div fxLayout="column" fxLayoutAlign="space-between center">
-  <div class="container" fxLayout="row" fxLayoutAlign="space-between center">
-    <mat-card>
-      <mat-card-header>
-          <mat-icon aria-hidden="false" aria-label="As seen at" mat-card-avatar>streetview</mat-icon>
-        <mat-card-title>As seen at</mat-card-title>
-        <mat-card-subtitle>Events sponsored</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content fxLayout.gt-sm="row" fxLayoutAlign="space-between center" fxLayout.lt-md="column">
-        <mat-list>
-          <mat-list-item>
-            <h4 mat-line>Startup Grind, 2018</h4>
-            <p mat-line>London, UK</p>
-          </mat-list-item>
-          <mat-list-item>
-            <h4 mat-line>WebSummit, 2018</h4>
-            <p mat-line>Lisbon, Portugal</p>
-          </mat-list-item>
-          <mat-list-item>
-            <h4 mat-line>Fosdem, 2019</h4>
-            <p mat-line>Brussels, Belgium</p>
-          </mat-list-item>
-          <mat-list-item>
-            <h4 mat-line>Web Engineering, 2019</h4>
-            <p mat-line>Palma, Spain</p>
-          </mat-list-item>
-        </mat-list>
-        <img class="mascot" src="https://cdn.dashboardhub.io/mascot/5.png" />
-      </mat-card-content>
-    </mat-card>
-  </div>
-</div>
+<dh-content id="events">
+    <dh-headline>
+        <img dhHeadlineImage src="https://cdn.dashboardhub.io/mascot/5.png" alt="DashboardHub Mascot" />
+        <h2>As seen at</h2>
+        <p>Events sponsored</p>
+    </dh-headline>
+    <div class="events">
+        <div class="events__event">
+            <h4>Startup Grind, 2018</h4>
+            <p>London, UK</p>
+        </div>
+
+        <div class="events__event">
+            <h4>WebSummit, 2018</h4>
+            <p>Lisbon, Portugal</p>
+        </div>
+
+        <div class="events__event">
+            <h4>Fosdem, 2019</h4>
+            <p>Brussels, Belgium</p>
+        </div>
+
+        <div class="events__event">
+            <h4>Web Engineering, 2019</h4>
+            <p>Palma, Spain</p>
+        </div>
+    </div>
+</dh-content>
